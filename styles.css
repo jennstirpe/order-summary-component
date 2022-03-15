@@ -7,9 +7,121 @@
 }
 
 
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    width: 22rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: .75rem;
+}
+
+#banner-img {
+    width: 22rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.summary {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.description {
+    text-align: center;
+    padding: .75rem 1.5rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.plan-choice {
+    background-color: var(--very-pale-blue);
+    width: 17rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    border-radius: .75rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan {
+    margin-left: 1.25rem;
+}
+
+h3 {
+    font-size: 1em;
+    margin: .25rem 0;
+}
+
+.price {
+    color: var(--desaturated-blue);
+    font-size: .85rem;
+}
+
+#change-plan {
+    margin-left: auto;
+    color: var(--bright-blue);
+    font-weight: 600;
+}
+
+#payment {
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: .75rem;
+    font-weight: 600;
+    text-decoration: none;
+    width: 17rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    box-shadow: 0px 10px 15px hsla(245, 75%, 52%, 0.274);
+}
+
+#cancel {
+    margin: 1.25rem;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+
+
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (min-width: 1440px) {
+	body {
+        background-image: url("images/pattern-background-desktop.svg");
+	}
 }
