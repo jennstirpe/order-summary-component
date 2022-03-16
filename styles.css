@@ -16,7 +16,7 @@ body {
     align-items: center;
     background-image: url("images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-bottom: .75rem;
+    box-shadow: 0px 10px 15px hsla(245, 75%, 52%, 0.274);
 }
 
 #banner-img {
@@ -89,6 +90,12 @@ h3 {
     font-weight: 600;
 }
 
+#change-plan:hover {
+    text-decoration: none;
+    color:hsl(245, 71%, 64%);
+}
+
+
 #payment {
     background-color: var(--bright-blue);
     color: white;
@@ -99,6 +106,12 @@ h3 {
     padding: 1rem 1rem;
     text-align: center;
     box-shadow: 0px 10px 15px hsla(245, 75%, 52%, 0.274);
+    transition: background-color 250ms ease;
+}
+
+#payment:hover {
+    background-color:hsl(245, 71%, 64%);
+    box-shadow: none;
 }
 
 #cancel {
@@ -107,8 +120,13 @@ h3 {
     color: var(--desaturated-blue);
     font-weight: 600;
     font-size: .85rem;
+    transition: color 500ms ease;
 }
 
+#cancel:hover {
+    color:var(--dark-blue);
+    font-weight: 800;
+}
 
 
 
