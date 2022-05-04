@@ -44,7 +44,7 @@ body {
     align-items: center;
 }
 
-h2 {
+h1 {
     color: var(--dark-blue);
     font-weight: 600;
     margin-top: 2rem;
@@ -74,7 +74,7 @@ h2 {
     margin-left: 1.25rem;
 }
 
-h3 {
+h2 {
     font-size: 1em;
     margin: .25rem 0;
 }
